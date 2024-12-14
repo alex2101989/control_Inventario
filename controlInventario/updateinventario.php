@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $estado =  $_POST['estado'];
 
     $query ="UPDATE inventario SET producto='$producto',descripción='$descripción',cantidad='$cantidad',precio_unitario='$precio_unitario',
-    categoría='$categoría', proveedor='$proveedor', estado='$estado'  where id_producto=$id";
+    id_categoria='$categoría', id_proveedor='$proveedor', estado='$estado'  where id_producto=$id";
 
     if($conn->query($query)==TRUE){
         header('Location: ../EditarProducto.php');
@@ -65,15 +65,48 @@ if(isset($_POST['submit'])){
                 <input type="number" step="0.01" name="precio_unitario"  class="form-control" value="<?php echo $inventario['precio_unitario']; ?>" require>
             </div>
 
-            <div class="mb-3">
-                <label for="name">categoría</label>
-                <input type="text" name="categoría" class="form-control" value="<?php echo $inventario['categoría']; ?>" require>
-            </div>
+                       <div class="mb-3">
+                                       <?php 
+                                       $query = "SELECT id_categoria, nombre_categoria FROM categorias";
+                                       $result = $conn->query($query);
 
-            <div class="mb-3">
-                <label for="name">proveedor</label>
-                <input type="text" name="proveedor" class="form-control" value="<?php echo $inventario['proveedor']; ?>" require>
-            </div>
+                                       if($result->num_rows>0){
+                                        echo '<label for="categoria">Categorias</label>';
+                                        echo '<select name="categoría" class="form-select">';
+                                        while($row = $result->fetch_assoc()){
+                                            echo '<option value="'.$row['id_categoria'].'">'.$row['nombre_categoria'].'</option>';
+                                        }
+                                        echo '</select>';
+                                       } else 
+                                       {
+                                        echo 'No hay categorias';
+                                       }
+                                       ?>
+                                   </div>
+
+               <!-- select proveedor -->
+               <div class="mb-3">
+                                   <?php 
+                                       $query = "SELECT id_proveedor, nombre_proveedor FROM proveedores";
+                                       $result = $conn->query($query);
+
+                                       if($result->num_rows>0){
+                                        echo '<label for="proveedor">Proveedor</label>';
+                                        echo '<select name="proveedor" class="form-select">';
+                                        while($row = $result->fetch_assoc()){
+                                            echo '<option value="'.$row['id_proveedor'].'">'.$row['nombre_proveedor'].'</option>';
+                                        }
+                                        echo '</select>';
+                                       } else 
+                                       {
+                                        echo 'No hay proveedores';
+                                       }
+                                       ?>
+                                       
+                                   </div>
+                                        <!-- end select proveedor -->
+
+            
 
 
 

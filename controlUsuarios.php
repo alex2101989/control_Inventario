@@ -26,7 +26,7 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Control de usuarios</h1>
                     <p class="mb-4">Sistema de integración y administración de usuarios<a target="_blank"
-                            href="https://wa.link/pqddme"> -> Asistencia Técnica</a>.</p>
+                            href="https://w.app/HO5QZC"> -> Asistencia Técnica</a>.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">

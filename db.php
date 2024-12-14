@@ -8,9 +8,9 @@ $pass ='';
 $db = 'control_inventarios';
 
 $conn = new mysqli($host, $user, $pass, $db);
-/*
-if(isset($conn)){
+
+/* if(isset($conn)){
     echo "Conexión exitosa"; 
- }
-*/
+ } */
+
 ?>

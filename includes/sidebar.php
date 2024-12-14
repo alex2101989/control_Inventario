@@ -6,7 +6,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas  fa-solid fa-binoculars"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">Ernesto</div>
+    <div class="sidebar-brand-text mx-3">Mario</div>
 </a>
 
 <!-- Divider -->
@@ -17,7 +17,7 @@
 <li class="nav-item active">
     <a class="nav-link" href="home.php">
         <i class="fas fa-gauge-high"></i>
-        <span>Home</span></a>
+        <span>Inicio</span></a>
 </li>
 
 <!-- Divider -->
@@ -81,7 +81,7 @@
     <div id="menu3" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Gestiones de movimientos</h6>
-            <a class="collapse-item" href="#">Entrada de productos</a>
+            <a class="collapse-item" href="nuevoMovimiento.php">Movientos</a>
             <a class="collapse-item" href="#">Salida de productos</a>
             <a class="collapse-item" href="#">Consulta de moviemientos</a>                                        
         </div>
@@ -89,11 +89,40 @@
 </li>
 
 <!-- Nav Item - Charts -->
-<li class="nav-item">
+<!-- <li class="nav-item">
     <a class="nav-link" href="#">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Reportes</span></a>
+</li> -->
+
+<li class="nav-item">                                                     <!--listaReporte es el id que llama a la lista   -->
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#listaReporte"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-solid fa-chart-area"></i>
+                    <span>Reportes</span>
+                </a>
+
+                <div id="listaReporte" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Reportes :</h6>
+                        <a class="collapse-item" href="reportePdf/productoPdf.php">Reporte de Productos</a>
+                        <a class="collapse-item" href="reportePdf/movimientoPdf.php">Reporte de Movimientos</a> 
+                        <a class="collapse-item" href="reportePdf/categoriaPdf.php">Reporte de Categorias</a>
+                        <a class="collapse-item" href="reportePdf/proveedorPdf.php">Reporte de proveedores</a>
+                        <a class="collapse-item" href="reportePdf/usuarioPdf.php">Reporte de Usuarios</a>
+                    
+                    </div>
+                </div>
 </li>
+
+
+
+
+
+
+
+
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">

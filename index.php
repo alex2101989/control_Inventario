@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ernesto</title>
+    <title>Mario</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
                             
                             <!-- imagen -->
                             <div class="col-lg-6 d-none d-lg-block " style="padding: 0;">
-                                <img src="img/foto1.jpg" alt="imagen de login" 
+                                <img src="img/foto2.jpg" alt="imagen de login" 
                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;">
                             </div>
                             

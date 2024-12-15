@@ -10,6 +10,8 @@ if(isset($_POST['submit'])){
     $proveedor =  $_POST['proveedor'];
     $estado =  $_POST['estado'];
     
+
+    
     $query = "INSERT INTO inventario(producto,descripción,cantidad,precio_unitario,id_categoria, id_proveedor, estado) 
     VALUES ('$producto', '$descripción','$cantidad','$precio_unitario', '$categoría','$proveedor', '$estado')";
     if($conn->query($query)==TRUE){

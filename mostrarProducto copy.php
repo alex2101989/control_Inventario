@@ -30,11 +30,16 @@
                 <!--  Tabla -->
                          <!-- DataTales Example -->
                         <div class="card shadow mb-4">
+
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Inventario</h6>
-                            <form action="generador_pdf" method="post"></form>
+                            <!-- aquí está el boton de generara pdf -->
+                            <form action="generador_pdf.php" method="post">
                             <button type="submit" class="btn btn-primary"> Generar PDF</button>
+                            </form>
                         </div>
+
+
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">

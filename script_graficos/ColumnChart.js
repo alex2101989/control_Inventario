@@ -16,7 +16,7 @@ fetch('script_graficos/data_ColumnChart.php')
             vAxis: {title: 'Cantidad'},
             legend: {position: 'none'},
             bars: 'vertical',
-            colors: ['#4285F4'],
+            colors: ['#33ff80'],
             width: 600,
             height: 400
             };

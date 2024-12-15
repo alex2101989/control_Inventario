@@ -23,7 +23,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">nuevo Movimiento</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Nuevo Movimiento</h1>
                     <p class="mb-4">Sistema de integración de inventario<a target="_blank"
                     href="https://wa.link/pqddme"> -> Asistencia Técnica</a>.</p>
 
@@ -33,10 +33,10 @@
                          <!-- DataTales Example -->
                          <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Ingresar producto</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Movimientos</h6>
 
                          <!-- modal --> 
-                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ingresar usuarios</button>
+                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Hacer un movimiento</button>
                            
                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                            <div class="modal-dialog">
